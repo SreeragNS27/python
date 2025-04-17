@@ -80,7 +80,27 @@
 # stud.display_student()
 # stud.display_person() 
 
-
+# a=3
+# b=4
+# c=9
+# print(f"a={a}  b={b}  c={c}")
 
 
     
+
+
+def process_data(*args, **kwargs):
+    """Function to demonstrate the use of both *args and **kwargs."""
+   
+    # Printing positional arguments
+    print("Positional arguments (*args):")
+    for i, arg in enumerate(args, 1):
+        print(f"  Argument {i}: {arg}")
+   
+    # Printing keyword arguments
+    print("\nKeyword arguments (**kwargs):")
+    for key, value in kwargs.items():
+        print(f"  {key}: {value}")
+
+# Testing the function with both positional and keyword arguments
+process_data(10, 20, 30, name="Raman", age=30, city="New York")
